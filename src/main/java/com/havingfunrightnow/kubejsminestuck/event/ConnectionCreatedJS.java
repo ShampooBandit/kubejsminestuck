@@ -7,10 +7,10 @@ import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.server.MinecraftServer;
 
 @SuppressWarnings("unused")
-public class SburbEventJS extends EventJS {
-    final SburbEvent event;
+public class ConnectionCreatedJS extends EventJS {
+    final SburbEvent.ConnectionCreated event;
 
-    public SburbEventJS(SburbEvent event) {
+    public ConnectionCreatedJS(SburbEvent.ConnectionCreated event) {
         this.event = event;
     }
 
@@ -22,5 +22,10 @@ public class SburbEventJS extends EventJS {
     @Info("the minecraft server this event happened in")
     public MinecraftServer getMinecraftServer() {
         return this.event.getMinecraftServer();
+    }
+
+    @Info("the type of connection between the players this event happened to")
+    public SburbEvent.ConnectionCreated.ConnectionType getConnectionType() {
+        return this.event.getConnectionType();
     }
 }

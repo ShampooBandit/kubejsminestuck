@@ -7,10 +7,10 @@ import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.server.MinecraftServer;
 
 @SuppressWarnings("unused")
-public class SburbEventJS extends EventJS {
-    final SburbEvent event;
+public class ConnectionClosedJS extends EventJS {
+    final SburbEvent.ConnectionClosed event;
 
-    public SburbEventJS(SburbEvent event) {
+    public ConnectionClosedJS(SburbEvent.ConnectionClosed event) {
         this.event = event;
     }
 

@@ -6,6 +6,7 @@ import dev.latvian.mods.kubejs.event.EventJS;
 import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.server.MinecraftServer;
 
+@SuppressWarnings("unused")
 public class OnEntryEventJS extends EventJS {
     final OnEntryEvent event;
 
